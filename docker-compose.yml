@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    build: .
+    container_name: postgres-db_patitas_producction
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: db_patitas_producction
+      POSTGRES_USER: mrgomez
+      POSTGRES_PASSWORD: Karin2100
